@@ -19,7 +19,7 @@ Para ter um site seguro com o HTTPS é necessário ter um certificado digital, e
 ### Endereços sob seu domínio
 
 Ao entrarmos um site, estamos no endereço desse site. O endereço começará com o nome do protocolo, no nosso caso `http` ou `https`. Após o nome do protocolo vem `://` seguido pelo nome do site, pelo `domínio`, esse domínio é formado pelo `www` (***W****ord* ***W****ide* ***W****eb*), e analizando da esquerda para direita teremos os níveis desse domínio:
-![hierarquia domínio](../domain-hierarquia.png)
+![hierarquia domínio](https://github.com/AlanaZUP/HTTP/blob/master/domain-hierarquia.png)
 
 
 ### O cliente pede e o servidor responde
