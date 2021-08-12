@@ -91,3 +91,52 @@ O HTTP2 não muda nada em relação ao que já conhecemos do HTTP. Ele especific
 - As requisições e respostas podem paralelas.
 - Os cabeçalhos guardam status, `Headers Stateful`.
 - Ele especifica o `Server-push`, o ato do servidor enviar dados sem que o browser peça.
+
+### Exercício Proposto
+
+Você ficou responsável por definir o melhor uso do protocolo HTTP para possibilitar a criação de uma API que realiza pesquisas de passagens de avião e cadastro de compradores. 
+
+Para a parte de pesquisa, nos diga qual verbo http você vai utilizar e também como vai passar os argumentos. Além disso, é necessário que você explique o motivo da decisão. 
+
+Para a parte de cadastro, nos diga qual verbo http você vai utilizar e também como vai passar os argumentos. Outro ponto importante é:  Esse endereço pode receber dados via formulário normal(form-url-encoded) ou JSON. Como você vai adicionar essa flexibilidade? Explique o motivo da decisão. 
+
+Para fechar, é necessário que sempre que possível a comunicação seja feita com os dados criptografados. O que você sugeriria aqui e por que?
+
+<br>
+<br>
+
+### Minha Solução
+
+Parte da pesquisa:
+- Eu utilizaria o método GET passando os parâmetros pelo URL. Pois o protocolo HTTP tem como padrão o uso do GET para realizar uma visualização sem alterar algo e para pesquisar as passagens de avião não iremos informar nenhum dado comprometedor. 
+ 
+<br>
+
+Parte de cadastro:
+- Eu utilizaria o método POST passando os parâmetros pelo corpo da requisição. Pois o protocolo HTTP tem como padrão o uso do POST para realizar cadastros e inserir novas informações, e, falando a nível de segurança, como pode envolver algum dado comprometedor, o POST por não enviar os dados pelo URL se torna uma opção mais segura.
+- Para que o endereço seja capaz de receber dados via formulário normal(form-url-encoded) ou JSON eu irei adicionar essa funcionalidade através do cabeçalho `Accept`, dessa forma `Accept: application/x-www-form-urlencoded, application/json` 
+
+<br>
+
+- Para realizar uma comunicação segura e criptografada eu utilizaria o protocolo HTTPS, pois o primeiro, devido ao SSL/TLS realiza uma comunicação criptografada sendo que se alguém entre o cliente e o servidor interceptar a requisição não conseguira interpretar
+
+### Solução Especialista
+
+- Objetivo de aprendizado: Criar um endereço que recebe get e os parâmetros de pesquisa
+    - Motivo da escolha: Escolhi o Get porque estamos fazendo uma busca. A semântica básica do HTTP sugere o uso de tal verbo para este tipo de operação. Além disso, o navegador suporta tranquilamente.
+- Criar um endereço que recebe um post para o cadastro. Além disso, esse endereço vai analisar o content-type da requisição para saber como lidar com o formato do dado enviado.
+- Necessário criar a estrutura de certificados para habilitar a criptografia via https nas comunicações. 
+
+### Resultado
+
+- Peso 2 (0): Utilização de content-type para definir o formato
+Por ter interpretado errado, eu abordei como sendo o Accept para fazer essa configuração, Eu tenho consciência de que o Accept é uma configuração pelo lado do cliente que indica quais tipos ele aceita e que o Content-type é a informação que o servidor analisa. 
+
+- Peso 2 (2): Utilização de https para criptografar a comunicação
+Acredito que abordei o assunto, apesar de levar pelo lado do cliente
+
+- Peso 3 (2): Utilização de get e parâmetros pela url para a pesquisa
+Acredito que abordei o assunto, apesar de levar pelo lado do cliente
+
+- Peso 3 (3): Utilização de post para o cadastro=
+Acredito que abordei o assunto, apesar de levar pelo lado do cliente
