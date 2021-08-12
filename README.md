@@ -66,6 +66,12 @@ A documentação mais completa e detalhada está neste [link](https://httpstatus
 
 ### Parâmetros da requisição
 
+Os parâmetros em uma requisição são usados para definir detalhes da pesquisa ou enviar dados de um formulário. Utilizando o método `GET` os atributos são passados como parâmetro na URL. O método `POST` deixa os parâmetros no corpo da requisição, assim evita que informações importantes, como a senha, fiquem explícitas na URL.
+
+O `GET` é usado para receber dados, o `POST` para adicionar algo no servidor, o `DELETE` deleta um dado e o `PUT` edita um dado. Os dois últimos são importantes quando falamos de Web Services.
+
+Um Web Service disponibiliza uma funcionalidade na web, através do protocolo HTTP. A grande diferença de um Web Service é que os dados não vem no formato HTML, e sim em algum formato independente da visualização, como XML ou JSON.
+
 ### Serviços na web com REST
 
 ### HTTP2 - Por uma web mais eficiente
