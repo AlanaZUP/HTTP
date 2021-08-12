@@ -38,7 +38,7 @@ Agora imagine que o servidor é uma casa: dependendo da casa há várias portas 
 
 A URL é o endereço da WEB, ele possui o ***protocolo*** seguido pelo ***domínio***, após o domínios podemos ter um caminho para um ***recurso*** que se deseja acessar.
 
-![HTTP-URL]()
+![HTTP-URL](https://github.com/AlanaZUP/HTTP/blob/master/http-url.png)
 
 ### O cliente pede e o servidor responde
 
