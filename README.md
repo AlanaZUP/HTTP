@@ -19,8 +19,26 @@ Para ter um site seguro com o HTTPS é necessário ter um certificado digital, e
 ### Endereços sob seu domínio
 
 Ao entrarmos um site, estamos no endereço desse site. O endereço começará com o nome do protocolo, no nosso caso `http` ou `https`. Após o nome do protocolo vem `://` seguido pelo nome do site, pelo `domínio`, esse domínio é formado pelo `www` (***W****ord* ***W****ide* ***W****eb*), e analizando da esquerda para direita teremos os níveis desse domínio:
+
+<br>
+
 ![hierarquia domínio](https://github.com/AlanaZUP/HTTP/blob/master/domain-hierarquia.png)
 
+<br>
+
+Existe também subdomínios, que representam sessões específicas dentro de um site. Por exemplo, no caso do Gmail temos o endereço: `mail.google.com` , ou ainda no caso do Google Drive: `drive.google.com`. Tanto Gmail como Drive são subdomínios do domínio Google.
+
+O domínio foi criado para organizar os sites na internet e para a gente ter algo fácil para se lembrar. As máquinas na internet têm uma outra forma de se endereçar. Elas usam o que se chama endereços de IP, números muitos difíceis para gente decorar.
+
+A gente acessa os sites pelo URL. Quando realizamos uma requisição essa URL é transformada em um número por um serviço transparente chamado de DNS (***D****omain* ***N****ame* ***S****ystem*).
+
+Esse serviço age como um grande banco de dados de domínios. 
+
+Agora imagine que o servidor é uma casa: dependendo da casa há várias portas disponíveis. O que é preciso saber é qual porta devemos utilizar quando chegarmos na casa. A porta utilizada o protocolo HTTP é a `80` e a utilizada para o protocolo HTTPS é a `443`.
+
+A URL é o endereço da WEB, ele possui o ***protocolo*** seguido pelo ***domínio***, após o domínios podemos ter um caminho para um ***recurso*** que se deseja acessar.
+
+![HTTP-URL]()
 
 ### O cliente pede e o servidor responde
 
