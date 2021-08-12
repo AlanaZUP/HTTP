@@ -42,6 +42,14 @@ A URL é o endereço da WEB, ele possui o ***protocolo*** seguido pelo ***domín
 
 ### O cliente pede e o servidor responde
 
+Ao efetuarmos um login em um site, o navegador envia o nosso login e a nossa senha para o servidor através do protocolo HTTP. No mundo HTTP, a requisição enviada pelo navegador para o servidor é chamada de `HTTP REQUEST`. O que recebemos como resposta é chamada de `HTTP RESPONSE`. A comunicação segue sempre esse modelo `Request-Response`. O cliente pede as informações e o servidor responde o que foi requisitado e nunca inicia a comunicação!
+
+Cada recurso é independente do outro e não depende do anterior. Cada requisição é independente da outra e ela sempre deve conter todas informações para o servidor responder. Chamamos essa característica de **stateless**.
+
+Após fazermos um login em um site e termos acesso liberado, o servidor tem certeza que o usuário existe e gera uma identificação para o usuário que é devolvido na resposta, essa identificação é guardada dentro dos cookies, geralmente com o nome relacionado a `session-id`. Esse nome, PHPSESSIONID, JSESSIONID ou outro, é gerado pela ferramenta de gerenciamento de Sessão. Uma sessão HTTP é que um tempo que o cliente permanece ativo no sistema.
+
+O cookie é um arquivo de texto criado pela aplicação web que guarda informações sobre usuário no navegador. Ele fica associado com um domínio que pode ter vários cookies.
+
 ### Depurando a requisição HTTP
 
 ### Parâmetros da requisição
