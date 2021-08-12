@@ -8,7 +8,7 @@ Tópicos abordados nessa aula:
 
 ### O que é HTTP?
 
-O HTTP é um protocolo que define regras de comunicação entre o *Client-Server*. É possível consultar a especificação dessas regras neste [link](https://datatracker.ietf.org/doc/html/rfc2616)
+O HTTP (***H****iper****T****ext* ***T****ransfer* ***P****rotocol* ) é um protocolo que define regras de comunicação entre o *Client-Server*. É possível consultar a especificação dessas regras neste [link](https://datatracker.ietf.org/doc/html/rfc2616)
 
 ### A web segura - HTTPS
 
