@@ -84,3 +84,10 @@ O `REST` pe um padrão arquitetural para comunicações entre aplicações. Ele 
 <br>
 
 ### HTTP2 - Por uma web mais eficiente
+
+O HTTP2 não muda nada em relação ao que já conhecemos do HTTP. Ele especifica mais a nível de servidor, ele implementa algumas melhorais:
+- `headers` são binários e comprimidos com o algoritmo `HPACK`
+- Ele habilita o `GZIP` como padrão de resposta, sendo que o retorno vem zipado.
+- As requisições e respostas podem paralelas.
+- Os cabeçalhos guardam status, `Headers Stateful`.
+- Ele especifica o `Server-push`, o ato do servidor enviar dados sem que o browser peça.
