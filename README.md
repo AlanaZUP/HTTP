@@ -12,6 +12,10 @@ O HTTP (***H****iper****T****ext* ***T****ransfer* ***P****rotocol* ) é um prot
 
 ### A web segura - HTTPS
 
+Quando fazemos uma requisição pelo navegador para um servidor, pode haver N intermediários antes de realmente chegar ao seu navagedor. Assim surgiu o HTTPS (HTTP SSL/TLS: ***S****ecure* ***S****ockets* ***L****ayer* /  ***T****ransport*  ***L****ayer*  ***S****ecurity*), é o HTTP com uma camada adicional de segurança/criptografia.
+
+Para ter um site seguro com o HTTPS é necessário ter um certificado digital, ele que irá gerar as chaves de criptografia. Os navegadores com a chave pública criptografam as informações e as enviam para o servidor que as descriptografa com a chave privada.
+
 ### Endereços sob seu domínio
 
 ### O cliente pede e o servidor responde
