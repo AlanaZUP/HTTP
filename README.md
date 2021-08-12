@@ -72,6 +72,15 @@ O `GET` é usado para receber dados, o `POST` para adicionar algo no servidor, o
 
 Um Web Service disponibiliza uma funcionalidade na web, através do protocolo HTTP. A grande diferença de um Web Service é que os dados não vem no formato HTML, e sim em algum formato independente da visualização, como XML ou JSON.
 
+<br>
+<br>
+
 ### Serviços na web com REST
+
+O `REST` pe um padrão arquitetural para comunicações entre aplicações. Ele aproveita a estrutura proposta pelo HTTP, a URI define os recursos e as operações são expressadas através dos métodos do HTTP (GET/POST/PUT/DELETE). Nós podemos especificar o tipo de resposta que precisamos através dos cabeçalhos `Accept` e `Content-Type`. [Aqui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) você verá alguns formatos aceitos e como expressa-los.
+
+
+<br>
+<br>
 
 ### HTTP2 - Por uma web mais eficiente
