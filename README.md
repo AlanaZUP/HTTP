@@ -50,7 +50,19 @@ Após fazermos um login em um site e termos acesso liberado, o servidor tem cert
 
 O cookie é um arquivo de texto criado pela aplicação web que guarda informações sobre usuário no navegador. Ele fica associado com um domínio que pode ter vários cookies.
 
+<br>
+<br>
+
 ### Depurando a requisição HTTP
+
+Quando o servidor retorna uma resposta, ele envia um `status code` do HTTP indicando o que aconteceu no processamento do pedido. Pedemos catalogá-los como a seguir:
+
+2XX -> Respostas de sucesso
+3XX -> Mensagem de redirecionamento
+4XX -> Respostas de erro do cliente
+5XX -> Respostas de erro do servidor
+
+A documentação mais completa e detalhada está neste [link](https://httpstatuses.com/)
 
 ### Parâmetros da requisição
 
